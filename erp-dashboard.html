@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en"
+      dir="rtl">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible"
+              content="IE=edge">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>وزارة المالية</title>
+
+
+        <!-- Prevent the demo from appearing in search engines -->
+        <meta name="robots"
+              content="noindex">
+
+
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7COswald:300,400,500,700%7CRoboto:400,500%7CExo+2:600&display=swap"
+              rel="stylesheet">
+
+
+
+        <!-- Perfect Scrollbar -->
+        <link type="text/css"
+              href="assets/vendor/perfect-scrollbar.css"
+              rel="stylesheet">
+
+        <!-- Material Design Icons -->
+        <link type="text/css"
+              href="assets/css/material-icons.css"
+              rel="stylesheet">
+
+        <!-- Font Awesome Icons -->
+        <link type="text/css"
+              href="assets/css/fontawesome.css"
+              rel="stylesheet">
+
+        <!-- Preloader -->
+        <link type="text/css"
+              href="assets/vendor/spinkit.css"
+              rel="stylesheet">
+
+        <link type="text/css"
+              href="assets/css/preloader.css"
+              rel="stylesheet">
+
+        <!-- App CSS -->
+        <link type="text/css"
+              href="assets/css/app.css"
+              rel="stylesheet">
+
+        <!-- Dark Mode CSS (optional) -->
+        <link type="text/css"
+              href="assets/css/dark-mode.css"
+              rel="stylesheet">
+
+
+    </head>
+
+    <body class="layout-app layout-sticky-subnav ">
+
+        <div class="preloader">
+            <div class="sk-chase">
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+            </div>
+
+            <!-- <div class="sk-bounce">
+    <div class="sk-bounce-dot"></div>
+    <div class="sk-bounce-dot"></div>
+  </div> -->
+
+            <!-- More spinner examples at https://github.com/tobiasahlin/SpinKit/blob/master/examples.html -->
+        </div>
+
+        <div class="mdk-drawer-layout js-mdk-drawer-layout"
+             data-push
+             data-responsive-width="992px">
+            <div class="mdk-drawer-layout__content page-content">
+
+                <!-- Header -->
+
+                <div class="navbar navbar-expand navbar-shadow px-0  pl-lg-16pt navbar-light bg-body"
+                     id="default-navbar"
+                     data-primary>
+
+                    <!-- Navbar toggler -->
+                    <button class="navbar-toggler d-block d-lg-none rounded-0"
+                            type="button"
+                            data-toggle="sidebar">
+                        <span class="material-icons">menu</span>
+                    </button>
+
+                    <!-- Navbar Brand -->
+                    <a href="index.html"
+                       class="navbar-brand mr-16pt d-lg-none">
+                        <img class="navbar-brand-icon mr-0 mr-lg-8pt"
+                             src="assets/images/logo/accent-teal-100@2x.png"
+                             width="32"
+                             alt="Huma">
+                        <span class="d-none d-lg-block">Huma</span>
+                    </a>
+
+                    <!-- <button class="btn navbar-btn mr-16pt" data-toggle="modal" data-target="#apps">Apps <i class="material-icons">arrow_drop_down</i></button> -->
+
+                    <form class="search-form navbar-search d-none d-md-flex mr-16pt"
+                          action="index.html">
+                        <button class="btn"
+                                type="submit"><i class="material-icons">search</i></button>
+                        <input type="text"
+                               class="form-control"
+                               placeholder=" بحث...">
+                    </form>
+
+                    <div class="flex"></div>
+
+
+
+                    <div class="nav navbar-nav flex-nowrap d-flex ml-0 mr-16pt">
+                        <div class="nav-item dropdown d-none d-sm-flex">
+                            <a href="#"
+                               class="nav-link d-flex align-items-center dropdown-toggle"
+                               data-toggle="dropdown">
+                                <img width="32"
+                                     height="32"
+                                     class="rounded-circle mr-8pt"
+                                     src="assets/images/people/50/guy-3.jpg"
+                                     alt="account" />
+                                <span class="flex d-flex flex-column mr-8pt">
+                                    <span class="navbar-text-100">احمد    محمد </span>
+                                    <small class="navbar-text-50">مسؤول</small>
+                                </span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <div class="dropdown-header"><strong>خصائص </strong></div>
+                                <a class="dropdown-item"
+                                   href="edit-account.html">بيانات شخصية </a>
+                                <a class="dropdown-item"
+                                   href="login.html">تسجيل الخروج</a>
+                            </div>
+                        </div>
+
+                        <!-- Notifications dropdown -->
+                        <div class="nav-item ml-16pt dropdown dropdown-notifications">
+                            <button class="nav-link btn-flush dropdown-toggle"
+                                    type="button"
+                                    data-toggle="dropdown"
+                                    data-dropdown-disable-document-scroll
+                                    data-caret="false">
+                                <i class="material-icons">notifications</i>
+                                <span class="badge badge-notifications badge-accent">2</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <div data-perfect-scrollbar
+                                     class="position-relative">
+                                    <div class="dropdown-header"><strong>اشعارات </strong></div>
+                                    <div class="list-group list-group-flush mb-0">
+
+                                        <a href="javascript:void(0);"
+                                           class="list-group-item list-group-item-action">
+                                            <span class="d-flex align-items-center mb-1">
+                                                <small class="text-black-50">قبل 3 ساعات</small>
+
+                                            </span>
+                                            <span class="d-flex">
+                                                <span class="avatar avatar-xs mr-2">
+                                                    <span class="avatar-title rounded-circle bg-light">
+                                                        <i class="material-icons font-size-16pt text-primary">group_add</i>
+                                                    </span>
+                                                </span>
+                                                <span class="flex d-flex flex-column">
+                                                    <strong class="text-black-100">محمد</strong>
+                                                    <span class="text-black-70">موعد اجتماع الاحد تأجل الي يوم الاربعاء</span>
+                                                </span>
+                                            </span>
+                                        </a>
+
+                                        <a href="javascript:void(0);"
+                                           class="list-group-item list-group-item-action">
+                                            <span class="d-flex align-items-center mb-1">
+                                                <small class="text-black-50">قبل 10 ساعات</small>
+
+                                            </span>
+                                            <span class="d-flex">
+                                                <span class="avatar avatar-xs mr-2">
+                                                    <span class="avatar-title rounded-circle bg-light">
+                                                        <i class="material-icons font-size-16pt text-primary">group_add</i>
+                                                    </span>
+                                                </span>
+                                                <span class="flex d-flex flex-column">
+                                                    <strong class="text-black-100">محمد</strong>
+                                                    <span class="text-black-70">اجتماع الاحد القادر الساعه 11 مساءً</span>
+                                                </span>
+                                            </span>
+                                        </a>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // END Notifications dropdown -->
+
+                        <!-- Notifications dropdown -->
+                                              <!-- // END Notifications dropdown -->
+                    </div>
+
+                    <div class="dropdown border-left-2 navbar-border">
+                        <button class="navbar-toggler navbar-toggler-custom d-block"
+                                type="button"
+                                data-toggle="dropdown"
+                                disabled
+                                data-caret="false">
+                            <span class="material-icons"></span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- // END Header -->
+
+                <div class="border-bottom-2 py-32pt position-relative z-1">
+                    <div class="container-fluid page__container d-flex flex-column flex-md-row align-items-center text-center text-sm-left">
+                        <div class="flex d-flex flex-column flex-sm-row align-items-center mb-24pt mb-md-0">
+
+                            <div class="mb-24pt mb-sm-0 mr-sm-24pt">
+                                <h2 class="mb-0">الرئيسية</h2>
+
+                                <ol class="breadcrumb p-0 m-0">
+
+                                    <li class="breadcrumb-item active">
+
+                                        الشاشة الرئيسية
+
+                                    </li>
+
+                                </ol>
+
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="row"
+                             role="tablist">
+                            <div class="col-auto d-flex flex-column">
+                                <h6 class="m-0">14/10/2022</h6>
+                                <p class="text-50 mb-0 d-flex align-items-center">
+                                    9:40
+                                </p>
+                            </div>
+                            <div class="col-auto border-left">
+                                <a href=""
+                                   class="btn btn-accent">ملاحظات</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="container-fluid page__container">
+                    <div class="page-section">
+
+                        <div class="row mb-lg-8pt">
+                            <div class="col-md-6">
+
+                                <div class="page-separator">
+                                    <div class="page-separator__text">تقارير</div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="d-flex align-items-center mb-16pt">
+                                            <div class="flex">
+                                                <strong>أخر التقارير</strong>
+                                                <span class="text-20">(3)</span>
+                                            </div>
+                                            <i class="material-icons text-50">more_horiz</i>
+                                        </div>
+
+
+
+                                    </div>
+
+                                    <div class="list-group list-group-flush">
+
+                                        <div class="list-group-item d-flex align-items-start p-16pt">
+                                            <div class="d-flex flex-column mr-16pt">
+                                                <small class="text-uppercase text-50">فبراير</small>
+                                                <strong class="border-bottom-2 border-bottom-accent">18</strong>
+                                            </div>
+                                            <div class="flex">
+                                                <div class="mb-8pt"><strong> 1 قرار زيادة مرتبات التعليم</strong></div>
+
+                                                <p class="mb-0 text-50"> بيسمسيب سيبنمت نمسيتب يسمنبت قرار مثال يسمنبت سيبنتسي يسنبتيس منيستب منيستب مينستب نمتسيب</p>
+                                                <a href=""
+                                                   class="text-70 text-underline">المزيد</a>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="list-group-item d-flex align-items-start p-16pt">
+                                            <div class="d-flex flex-column mr-16pt">
+                                                <small class="text-uppercase text-50">فبراير</small>
+                                                <strong class="border-bottom-2 border-bottom-accent">17</strong>
+                                            </div>
+                                            <div class="flex">
+                                              <div class="mb-8pt"><strong>2 قرار زيادة مرتبات التعليم</strong></div>
+
+                                              <p class="mb-0 text-50"> بيسمسيب سيبنمت نمسيتب يسمنبت قرار مثال يسمنبت سيبنتسي يسنبتيس منيستب منيستب مينستب نمتسيب</p>
+                                                <a href=""
+                                                   class="text-70 text-underline">المزيد</a>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="list-group-item d-flex align-items-start p-16pt">
+                                            <div class="d-flex flex-column mr-16pt">
+                                                <small class="text-uppercase text-50">يناير</small>
+                                                <strong class="border-bottom-2 border-bottom-accent">11</strong>
+                                            </div>
+                                            <div class="flex">
+                                              <div class="mb-8pt"><strong> 3 قرار زيادة مرتبات التعليم</strong></div>
+
+                                                <a href=""
+                                                   class="d-flex align-items-center border-1 rounded mb-0 p-8pt">
+                                                    <span class="mr-8pt p-8pt bg-secondary rounded"
+                                                          style="width: 40px; height: 40px;">
+                                                        <i class="material-icons icon-24pt text-white">file_download</i>
+                                                    </span>
+                                                    <span class="flex d-flex flex-column">
+                                                        <span class="text-100">قرار.pdf</span>
+                                                        <span class="text-50 lh-1">1.3 Mb</span>
+                                                    </span>
+                                                    <span class="text-70 text-underline mr-8pt">download</span>
+                                                </a>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="card-footer">
+
+                                        <ul class="pagination justify-content-start pagination-xsm m-0">
+                                            <li class="page-item disabled">
+                                                <a class="page-link"
+                                                   href="#"
+                                                   aria-label="Previous">
+                                                    <span aria-hidden="true"
+                                                          class="material-icons">chevron_left</span>
+                                                    <span>Prev</span>
+                                                </a>
+                                            </li>
+                                            <li class="page-item dropdown">
+                                                <a class="page-link dropdown-toggle"
+                                                   data-toggle="dropdown"
+                                                   href="#"
+                                                   aria-label="Page">
+                                                    <span>1</span>
+                                                </a>
+                                                <div class="dropdown-menu">
+                                                    <a href=""
+                                                       class="dropdown-item active">1</a>
+                                                    <a href=""
+                                                       class="dropdown-item">2</a>
+                                                    <a href=""
+                                                       class="dropdown-item">3</a>
+                                                    <a href=""
+                                                       class="dropdown-item">4</a>
+                                                    <a href=""
+                                                       class="dropdown-item">5</a>
+                                                </div>
+                                            </li>
+                                            <li class="page-item">
+                                                <a class="page-link"
+                                                   href="#"
+                                                   aria-label="Next">
+                                                    <span>Next</span>
+                                                    <span aria-hidden="true"
+                                                          class="material-icons">chevron_right</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="col-md-6">
+
+                                <div class="page-separator">
+                                    <div class="page-separator__text">احصائيات</div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div id="legend"
+                                             class="chart-legend mt-0 mb-24pt justify-content-start"></div>
+                                        <div class="chart"
+                                             style="height: 280px;">
+                                            <canvas id="earningsChart"
+                                                    class="chart-canvas js-update-chart-bar"
+                                                    data-chart-legend="#legend"
+                                                    data-chart-line-background-color="primary,white"
+                                                    data-chart-prefix="$"
+                                                    data-chart-suffix="k">
+                                                <span style="font-size: 1rem;">
+                                            </canvas>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header p-0 nav border-0">
+                                        <div class="row no-gutters flex"
+                                             role="tablist">
+                                            <div class="col-6">
+                                                <div class="p-card-header d-flex align-items-center">
+                                                    <div class="h4 mb-0  mr-3">الباب الأول</div>
+                                                    <div class="flex">
+                                                        <p class="mb-4pt"><strong>200,540</strong></p>
+                                                        <p class="text-50 mb-0 d-flex align-items-center">
+                                                          <i class="indicator-line rounded bg-primary"></i>
+                                                            <!-- <i class="material-icons text-accent ml-4pt icon-16pt">keyboard_arrow_up</i> -->
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 border-left">
+                                                <div class="p-card-header d-flex align-items-center">
+                                                    <div class="h4 mb-0 mr-3">الباب الثاني</div>
+                                                    <div class="flex">
+                                                        <p class="mb-4pt"><strong>200,000</strong></p>
+                                                        <p class="text-50 mb-0 d-flex align-items-center">
+                                                            <i class="indicator-line rounded bg-primary"></i>
+                                                            <!-- <i class="material-icons text-accent ml-4pt icon-16pt">keyboard_arrow_up</i> -->
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 border-left">
+                                                <div class="p-card-header d-flex align-items-center">
+                                                    <div class="h4 mb-0 mr-3">الباب الثالث</div>
+                                                    <div class="flex">
+                                                        <p class="mb-4pt"><strong>500,000</strong></p>
+                                                        <p class="text-50 mb-0 d-flex align-items-center">
+                                                            <i class="indicator-line rounded bg-primary"></i>
+                                                            <!-- <i class="material-icons text-accent ml-4pt icon-16pt">keyboard_arrow_up</i> -->
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 border-left">
+                                                <div class="p-card-header d-flex align-items-center">
+                                                    <div class="h4 mb-0 mr-3">الباب الرابع</div>
+                                                    <div class="flex">
+                                                        <p class="mb-4pt"><strong>800,000</strong></p>
+                                                        <p class="text-50 mb-0 d-flex align-items-center">
+                                                            <i class="indicator-line rounded bg-primary"></i>
+                                                            <!-- <i class="material-icons text-accent ml-4pt icon-16pt">keyboard_arrow_up</i> -->
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 border-left">
+                                                <div class="p-card-header d-flex align-items-center">
+                                                    <div class="h4 mb-0 mr-3">الباب الخامس</div>
+                                                    <div class="flex">
+                                                        <p class="mb-4pt"><strong>100,000</strong></p>
+                                                        <p class="text-50 mb-0 d-flex align-items-center">
+                                                            <i class="indicator-line rounded bg-primary"></i>
+                                                            <!-- <i class="material-icons text-accent ml-4pt icon-16pt">keyboard_arrow_up</i> -->
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="js-fix-footer footer border-top-2">
+                    <div class="container-fluid page__container page-section d-flex flex-column">
+                        <p class="text-70 brand mb-24pt">
+                            <img class="brand-icon"
+                                 src="assets/images/logo/black-70@2x.png"
+                                 width="30"
+                                 alt="Huma"> وزارة المالية
+                        </p>
+                    </div>
+                    <div class="pb-16pt pb-lg-24pt">
+                        <div class="container-fluid page__container">
+                            <div class="bg-dark rounded page-section py-lg-32pt px-16pt px-lg-24pt">
+                                <div class="row">
+                                    <div class="col-md-2 col-sm-4 mb-24pt mb-md-0">
+                                        <nav class="nav nav-links nav--flush">
+                                            <a href="#"
+                                               class="nav-link mr-8pt"><img src="assets/images/icon/footer/facebook-square@2x.png"
+                                                     width="24"
+                                                     height="24"
+                                                     alt="Facebook"></a>
+                                            <a href="#"
+                                               class="nav-link mr-8pt"><img src="assets/images/icon/footer/twitter-square@2x.png"
+                                                     width="24"
+                                                     height="24"
+                                                     alt="Twitter"></a>
+                                            <a href="#"
+                                               class="nav-link mr-8pt"><img src="assets/images/icon/footer/vimeo-square@2x.png"
+                                                     width="24"
+                                                     height="24"
+                                                     alt="Vimeo"></a>
+                                            <!-- <a href="#" class="nav-link"><img src="assets/images/icon/footer/youtube-square@2x.png" width="24" height="24" alt="YouTube"></a> -->
+                                        </nav>
+                                    </div>
+                                    <div class="col-md-6 col-sm-4 mb-24pt mb-md-0 d-flex align-items-center">
+
+                                    </div>
+                                    <div class="col-md-4 text-md-right">
+                                        <p class="mb-8pt d-flex align-items-md-center justify-content-md-end">
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- // END drawer-layout__content -->
+
+            <!-- drawer -->
+            <div class="mdk-drawer js-mdk-drawer"
+                 id="default-drawer">
+                <div class="mdk-drawer__content">
+                    <div class="sidebar sidebar-dark sidebar-left"
+                         data-perfect-scrollbar>
+
+                        <!-- Navbar toggler -->
+                        <!-- <a href="compact-erp-dashboard.html"
+                           class="navbar-toggler navbar-toggler-right navbar-toggler-custom d-flex align-items-center justify-content-center position-absolute right-0 top-0"
+                           data-toggle="tooltip"
+                           data-title="Switch to Compact Vertical Layout"
+                           data-placement="right"
+                           data-boundary="window">
+                            <span class="material-icons">sync_alt</span>
+                        </a> -->
+
+                        <a href="index.html"
+                           class="sidebar-brand ">
+                            <img class="sidebar-brand-icon"
+                                 src="assets/images/logo/accent-teal-100@2x.png"
+                                 alt="Huma">
+                            <span>وزارة المالية</span>
+                        </a>
+
+                        <div class="sidebar-account mx-16pt mb-16pt dropdown">
+                            <a href="#"
+                               class="nav-link d-flex align-items-center dropdown-toggle"
+                               data-toggle="dropdown"
+                               data-caret="false">
+                                <img width="32"
+                                     height="32"
+                                     class="rounded-circle mr-8pt"
+                                     src="assets/images/people/50/guy-3.jpg"
+                                     alt="account" />
+                                <span class="flex d-flex flex-column mr-8pt">
+                                    <span class="text-black-100">احمد محمد </span>
+                                    <small class="text-black-50">مسؤول</small>
+                                </span>
+                                <i class="material-icons text-black-20 icon-16pt">keyboard_arrow_down</i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-full dropdown-menu-caret-center">
+                                <div class="dropdown-header"><strong>خصائص</strong></div>
+                                <a class="dropdown-item"
+                                   href="edit-account.html">بيانات شخصية</a>
+                                <a class="dropdown-item"
+                                   href="login.html">تسجيل خروج</a>
+                                <div class="dropdown-divider"></div>
+
+                            </div>
+                        </div>
+                        <div class="sidebar-heading">عام</div>
+                        <ul class="sidebar-menu">
+                          <li class="sidebar-menu-item">
+                              <a class="sidebar-menu-button"
+                                 href="">
+                                  <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">insert_chart_outlined</span>
+                                  <span class="sidebar-menu-text">رئيسيه</span>
+                              </a>
+                          </li>
+                        </ul>
+                        <div class="sidebar-heading">إدارة</div>
+                        <ul class="sidebar-menu">
+                          <li class="sidebar-menu-item">
+                              <a class="sidebar-menu-button"
+                                 href="index.html">
+                                  <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">insert_chart_outlined</span>
+                                  <span class="sidebar-menu-text">الجهات</span>
+                              </a>
+                          </li>
+                            <li class="sidebar-menu-item active open">
+                                <a class="sidebar-menu-button js-sidebar-collapse"
+                                   data-toggle="collapse"
+                                   href="#enterprise_menu">
+                                    <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">donut_large</span>
+                                    بنود
+                                    <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                                </a>
+                                <ul class="sidebar-submenu collapse show sm-indent"
+                                    id="enterprise_menu">
+                                    <li class="sidebar-menu-item active">
+                                        <a class="sidebar-menu-button"
+                                           href="erp-dashboard.html">
+                                            <span class="sidebar-menu-text">الباب الأول</span>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-menu-item">
+                                        <a class="sidebar-menu-button"
+                                           href="crm-dashboard.html">
+                                            <span class="sidebar-menu-text">الباب الثاني</span>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-menu-item">
+                                        <a class="sidebar-menu-button"
+                                           href="hr-dashboard.html">
+                                            <span class="sidebar-menu-text">الباب الثالث</span>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-menu-item">
+                                        <a class="sidebar-menu-button"
+                                           href="employees.html">
+                                            <span class="sidebar-menu-text">الباب الرابع</span>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-menu-item">
+                                        <a class="sidebar-menu-button"
+                                           href="staff.html">
+                                            <span class="sidebar-menu-text">الباب الخامس</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sidebar-menu-item">
+                                <a class="sidebar-menu-button"
+                                   href="index.html">
+                                    <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">insert_chart_outlined</span>
+                                    <span class="sidebar-menu-text">القرارات</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-menu-item">
+                                <a class="sidebar-menu-button"
+                                   href="index.html">
+                                    <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">insert_chart_outlined</span>
+                                    <span class="sidebar-menu-text">الاشعارات</span>
+                                </a>
+                            </li>
+                        <div class="sidebar-heading">اعدادات</div>
+                        <ul class="sidebar-menu">
+                          <li class="sidebar-menu-item">
+                              <a class="sidebar-menu-button"
+                                 href="index.html">
+                                  <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">insert_chart_outlined</span>
+                                  <span class="sidebar-menu-text">المستخدمين</span>
+                              </a>
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- // END drawer -->
+        </div>
+        <!-- // END drawer-layout -->
+
+        <!-- App Settings FAB -->
+
+        </div>
+        <!-- jQuery -->
+        <script src="assets/vendor/jquery.min.js"></script>
+
+        <!-- Bootstrap -->
+        <script src="assets/vendor/popper.min.js"></script>
+        <script src="assets/vendor/bootstrap.min.js"></script>
+
+        <!-- Perfect Scrollbar -->
+        <script src="assets/vendor/perfect-scrollbar.min.js"></script>
+
+        <!-- DOM Factory -->
+        <script src="assets/vendor/dom-factory.js"></script>
+
+        <!-- MDK -->
+        <script src="assets/vendor/material-design-kit.js"></script>
+
+        <!-- App JS -->
+        <script src="assets/js/app.js"></script>
+
+        <!-- Highlight.js -->
+        <script src="assets/js/hljs.js"></script>
+
+        <!-- Global Settings -->
+        <script src="assets/js/settings.js"></script>
+
+        <!-- Moment.js -->
+        <script src="assets/vendor/moment.min.js"></script>
+        <script src="assets/vendor/moment-range.js"></script>
+
+        <!-- Flatpickr -->
+        <script src="assets/vendor/flatpickr/flatpickr.min.js"></script>
+        <script src="assets/js/flatpickr.js"></script>
+
+        <!-- Chart.js -->
+        <script src="assets/vendor/Chart.min.js"></script>
+        <script src="assets/js/chartjs.js"></script>
+        <script src="assets/js/chartjs-rounded-bar.js"></script>
+
+        <!-- Chart.js Samples -->
+        <script src="assets/js/page.erp-dashboard.js"></script>
+
+        <!-- List.js -->
+        <script src="assets/vendor/list.min.js"></script>
+        <script src="assets/js/list.js"></script>
+
+        <!-- Tables -->
+        <script src="assets/js/toggle-check-all.js"></script>
+        <script src="assets/js/check-selected-row.js"></script>
+
+        <!-- App Settings (safe to remove) -->
+        <script src="assets/js/app-settings.js"></script>
+    </body>
+
+</html>
